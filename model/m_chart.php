@@ -1,5 +1,7 @@
-<!-- <!-- <?php
+<?php
 // models/ChartModel.php
+
+include_once 'm_base.php';
 class ChartModel {
     public function getChartData() {
         return [
@@ -10,4 +12,4 @@ class ChartModel {
         ];
     }
 } 
-?> -->
+?>

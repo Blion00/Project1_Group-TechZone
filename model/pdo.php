@@ -8,6 +8,7 @@ function pdo_connect(){
     try{
         $conn = new PDO("mysql:host=$servername;dbname=$database;charset=utf8", $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo("Kết nối thành công");
         return $conn;
     }
     catch(PDOException $e) {
